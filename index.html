@@ -43,6 +43,93 @@
 
 <div class="w3-container">
 
+    <button onclick="accordeon('js')" class="w3-button w3-block w3-left-align w3-dark-grey">Aide-mémoire JavaScript</button>
+    <div id="js" class="w3-container w3-hide">
+        <div class="w3-panel w3-card w3-light-grey"> 
+            <h4>Déclarer une ou plusieurs variables</h4>
+            <div class="w3-code jsHigh notranslate">
+                let x;<br>
+                let x, y, z;
+            </div>
+        </div>
+
+        <div class="w3-panel w3-card w3-light-grey"> 
+            <h4>Affecter une valeur à une ou plusieurs variables</h4>
+            <div class="w3-code jsHigh notranslate">
+                x = 2;<br>
+                x = 2, y = 3, z = 5;
+            </div>
+        </div>
+
+        <div class="w3-panel w3-card w3-light-grey"> 
+            <h4>On peut affecter une valeur au moment de déclarer les variables</h4>
+            <div class="w3-code jsHigh notranslate">
+                let x = 2;<br>
+                let x = 2, y = 3, z = 5;
+            </div>
+        </div>
+
+        <div class="w3-panel w3-card w3-light-grey"> 
+            <h4>Opérateurs arithmétiques</h4>
+            <div class="w3-code jsHigh notranslate">
+                let x = 3 + 2; // x vaut 5 (addition)<br>
+                x = 3 - 2; // x vaut 1 (soustraction)<br>
+                x = 3 * 2; // x vaut 6 (multiplication)<br>
+                x = 3 / 2; // x vaut 1.5 (division)<br>
+                x = 5 % 2; // x vaut 1 (modulo)<br>
+                <br>
+                x = 10;<br>
+                x++; // x vaut 11 (incrémentation)<br>
+                x--; // x vaut 10 (décrémentation)<br>
+                <br>
+                x += 2; // x vaut 12 ( équivalent à x = x + 2)<br>
+                x -= 3; // x vaut 9 ( équivalent à x = x - 3)<br>
+                x *= 5; // x vaut 45 ( équivalent à x = x * 5)<br>
+                x /= 3; // x vaut 15 ( équivalent à x = x / 3)<br>
+                x %= 4; // x vaut 3 ( équivalent à x = x % 4)
+            </div>
+        </div>
+
+        <div class="w3-panel w3-card w3-light-grey"> 
+            <h4>Priorités des opérateurs</h4>
+            <table class="w3-table w3-bordered">
+                <tr>
+                    <th>Priorité relative</th>
+                    <th>Opérateurs</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>++, --</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>*, /, %<td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>+, -</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>=, +=, -=, *=, /=, %=</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="w3-panel w3-card w3-light-grey"> 
+            <h4>Concaténation de chaînes de caractères</h4>
+            <div class="w3-code jsHigh notranslate">
+                let x = "Pierre";<br>
+                let y = "Jean";<br>
+                let z = "Jacques";<br>
+                texte = x + ", " + y + " et " + z + "s'en vont à la ferme."<br>
+                // texte vaut "Pierre, Jean et Jacques s'en vont à la ferme."
+            </div>
+        </div>
+    </div>
+
+    <br>
+
     <button onclick="accordeon('sem1')" class="w3-button w3-block w3-left-align w3-dark-grey">Semaine 1</button>
     <div id="sem1" class="w3-container w3-hide">
         <div class="w3-panel w3-round w3-border">
@@ -149,6 +236,11 @@
     </div>
 
 </div>
+
+<script src="https://www.w3schools.com/lib/w3codecolor.js"></script>
+<script>
+    w3CodeColor();
+</script>
 
 <script>
 function accordeon(id) {
