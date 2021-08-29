@@ -24,7 +24,6 @@
                 <a target="_blank" href="https://mathieudupont.github.io/H21-420-964-EM/Integrite-intellectuelle-Quiz-V3.pdf" class="w3-bar-item w3-button">Quiz plagiat</a>
             </div>
         </div>
-        <!-- <a target="_blank" href="https://drive.google.com/drive/my-drive" class="w3-bar-item w3-button w3-blue">Google Drive</a> -->
         <a target="_blank" href="https://www.w3schools.com/js/default.asp" class="w3-bar-item w3-button w3-green">W3schools</a>
         <a target="_blank" href="https://www.cegepmontpetit.ca" class="w3-bar-item w3-button w3-dark-grey">CEM</a>
         <a target="_blank" href="https://dectim.ca" class="w3-bar-item w3-button w3-blue">TIM</a>
@@ -86,7 +85,7 @@
 
     <br>
 
-    <button onclick="accordeon('js')" class="w3-button w3-block w3-left-align w3-dark-grey">Aide-mémoire JavaScript</button>
+    <button onclick="accordeon('js')" class="w3-button w3-block w3-left-align w3-blue">Aide-mémoire JavaScript</button>
     <div id="js" class="w3-container w3-hide">
         <div class="w3-panel w3-card w3-light-grey"> 
             <h4>Déclarer une ou plusieurs variables</h4>
@@ -125,11 +124,49 @@
                 x++; // x vaut 11 (incrémentation)<br>
                 x--; // x vaut 10 (décrémentation)<br>
                 <br>
-                x += 2; // x vaut 12 ( équivalent à x = x + 2)<br>
-                x -= 3; // x vaut 9 ( équivalent à x = x - 3)<br>
-                x *= 5; // x vaut 45 ( équivalent à x = x * 5)<br>
-                x /= 3; // x vaut 15 ( équivalent à x = x / 3)<br>
-                x %= 4; // x vaut 3 ( équivalent à x = x % 4)
+                x += 2; // x vaut 12 (équivalent à x = x + 2)<br>
+                x -= 3; // x vaut 9 (équivalent à x = x - 3)<br>
+                x *= 5; // x vaut 45 (équivalent à x = x * 5)<br>
+                x /= 3; // x vaut 15 (équivalent à x = x / 3)<br>
+                x %= 4; // x vaut 3 (équivalent à x = x % 4)
+            </div>
+        </div>
+
+        <div class="w3-panel w3-card w3-light-grey"> 
+            <h4>Concaténation de chaînes de caractères</h4>
+            <div class="w3-code jsHigh notranslate">
+                let x = "Olive";<br>
+                let y = "Capuchon";<br>
+                texte = x + " et " + y + " sont des superhéros."<br>
+                // texte vaut "Olive et Capuchon sont des superhéros."
+            </div>
+        </div>
+
+        <div class="w3-panel w3-card w3-light-grey"> 
+            <h4>Opérateurs de comparaison</h4>
+            <div class="w3-code jsHigh notranslate">
+                5.5 > 6.5; // false<br>
+                5 >= 5; // true<br>
+                5 < 7; // true<br>
+                5 <= 7; // true<br>
+                5 == 7; // false<br>
+                5 != 7; // true<br>
+                <br>
+                "bon" > "arbre"; // true<br>
+                "ball" >= "car"; // false<br>
+                "car" < "ball" ; // false<br>
+                "ball" <= "ball"; // true<br>
+                "allo" == "allo_"; // false<br>
+                "allo" != "allo_"; // true
+            </div>
+        </div>
+
+        <div class="w3-panel w3-card w3-light-grey"> 
+            <h4>Opérateurs logiques</h4>
+            <div class="w3-code jsHigh notranslate">
+                1 < 2 && 2 > 3; // false (AND)<br>
+                1 < 2 || 2 > 3 ; // true (OR)<br>
+                !(1 < 2) ; // false (NOT)
             </div>
         </div>
 
@@ -158,18 +195,25 @@
                 </tr>
                 <tr>
                     <td>5</td>
+                    <td><, <=, >, >=</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>==, !=</td>
+                </tr>
+                <tr>
+                    <td>7</td>
                     <td>=, +=, -=, *=, /=, %=</td>
                 </tr>
             </table>
         </div>
 
         <div class="w3-panel w3-card w3-light-grey"> 
-            <h4>Concaténation de chaînes de caractères</h4>
+            <h4>Fonctions sur le DOM</h4>
             <div class="w3-code jsHigh notranslate">
-                let x = "Olive";<br>
-                let y = "Capuchon";<br>
-                texte = x + " et " + y + " sont des superhéros."<br>
-                // texte vaut "Olive et Capuchon sont des superhéros."
+                document.getElementById("id"); // accéder à un élément du DOM par son ID<br>
+                document.getElementById("id").textContent; // obtenir le texte d'un élément du DOM par son ID<br>
+                document.getElementById("id").textContent = "Bonjour!"; // modifier le texte d'un élément du DOM par son ID<br>
             </div>
         </div>
     </div>
