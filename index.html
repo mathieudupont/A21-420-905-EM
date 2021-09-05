@@ -260,6 +260,28 @@ else{
 }</pre>
         </div>
 
+        <div class="w3-panel w3-card w3-light-grey"> 
+            <h4>Fonctions</h4>
+            <pre class="w3-code jsHigh notranslate">
+/* Déclarer une fonction */
+function changerTitre(){
+    document.getElementById("titre").textContent = "Bonjour!";
+}
+
+/* Appeler une fonction (afin qu'elle soit exécutée) */
+changerTitre();
+</pre>
+        </div>
+
+        <div class="w3-panel w3-card w3-light-grey"> 
+            <h4>Évènements</h4>
+            <div class="w3-code jsHigh notranslate">
+                 // ajouter un écouteur pour un évènement (ici "click") sur un élément :<br>
+                document.getElementById("titre").addEventListener("click", changerTitre);<br>
+                // la fonction changerTitre sera appelée lors d'un clic sur l'élément "titre"
+            </div>
+        </div>
+
     </div>
 
     <br><br>
