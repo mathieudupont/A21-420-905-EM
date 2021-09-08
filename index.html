@@ -51,41 +51,6 @@
 
     <br>
 
-    <button onclick="accordeon('capsules')" class="w3-button w3-block w3-left-align w3-dark-grey">Capsules / tutoriels</button>
-    <div id="capsules" class="w3-container w3-hide">
-
-        <br>
-        
-        <button onclick="accordeon('ws')" class="w3-button w3-block w3-left-align w3-blue">Installation de WebStorm à la maison</button>
-        <div id="ws" class="w3-container w3-hide">
-            <div class="w3-panel w3-round w3-border">
-                <div class="w3-container w3-cell w3-cell-middle">
-                    <p><iframe src="https://youtube.com/embed/5BLgDAomDMs" allowfullscreen></iframe></p>
-                </div>
-                <div class="w3-container w3-cell w3-cell-middle">
-                    <p><a href="https://account.jetbrains.com/login" class="w3-button w3-dark-gray w3-round" target="_blank">lien vers JetBrains</a></p>
-                </div>
-            </div>
-        </div>
-
-        <br>
-        
-        <button onclick="accordeon('gd')" class="w3-button w3-block w3-left-align w3-blue">Google Drive</button>
-        <div id="gd" class="w3-container w3-hide">
-            <div class="w3-panel w3-round w3-border">
-                <div class="w3-container w3-cell w3-cell-middle">
-                    <p><iframe src="https://youtube.com/embed/XszvGNg1Jl4" allowfullscreen></iframe></p>
-                </div>
-                <div class="w3-container w3-cell w3-cell-middle">
-                    <p><a href="https://drive.google.com/drive/my-drive" class="w3-button w3-dark-gray w3-round" target="_blank">lien vers Google Drive</a></p>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <br>
-
     <button onclick="accordeon('livres')" class="w3-button w3-block w3-left-align w3-brown">Suggestions de livres</button>
     <div id="livres" class="w3-container w3-hide">
         <div class="w3-panel w3-round w3-border">
@@ -280,6 +245,55 @@ changerTitre();
                  // ajouter un écouteur pour un évènement (ici "click") sur un élément :<br>
                 document.getElementById("titre").addEventListener("click", changerTitre);<br>
                 // la fonction changerTitre sera appelée lors d'un clic sur l'élément "titre"
+            </div>
+        </div>
+
+    </div>
+
+    <br>
+
+    <button onclick="accordeon('capsules')" class="w3-button w3-block w3-left-align w3-orange">Capsules</button>
+    <div id="capsules" class="w3-container w3-hide">
+
+        <br>
+        
+        <button onclick="accordeon('ws')" class="w3-button w3-block w3-left-align w3-dark-grey">Installation de WebStorm à la maison</button>
+        <div id="ws" class="w3-container w3-hide">
+            <div class="w3-panel w3-round w3-border">
+                <div class="w3-container w3-cell w3-cell-middle">
+                    <p><iframe src="https://youtube.com/embed/5BLgDAomDMs" allowfullscreen></iframe></p>
+                </div>
+                <div class="w3-container w3-cell w3-cell-middle">
+                    <p><a href="https://account.jetbrains.com/login" class="w3-button w3-dark-gray w3-round" target="_blank">lien vers JetBrains</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- <br>
+        
+        <button onclick="accordeon('gd')" class="w3-button w3-block w3-left-align w3-blue">Google Drive</button>
+        <div id="gd" class="w3-container w3-hide">
+            <div class="w3-panel w3-round w3-border">
+                <div class="w3-container w3-cell w3-cell-middle">
+                    <p><iframe src="https://youtube.com/embed/XszvGNg1Jl4" allowfullscreen></iframe></p>
+                </div>
+                <div class="w3-container w3-cell w3-cell-middle">
+                    <p><a href="https://drive.google.com/drive/my-drive" class="w3-button w3-dark-gray w3-round" target="_blank">lien vers Google Drive</a></p>
+                </div>
+            </div>
+        </div> -->
+
+        <br>
+        
+        <button onclick="accordeon('gd')" class="w3-button w3-block w3-left-align w3-blue">Semaine 3</button>
+        <div id="gd" class="w3-container w3-hide">
+            <div class="w3-panel w3-round w3-border">
+                <div class="w3-container w3-cell w3-cell-middle">
+                    <p class="w3-button w3-dark-gray w3-round">Exercice 1 - Compteur sans limite</p>
+                </div>
+                <div class="w3-container w3-cell w3-cell-middle">
+                    <p><iframe src="https://youtube.com/embed/M3nV-gXysW8" allowfullscreen></iframe></p>
+                </div>
             </div>
         </div>
 
