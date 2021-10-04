@@ -14,6 +14,7 @@ body {
     height: 100%;
 }
 .wrapper {
+    zoom: 0.67;
     position: relative;
     width: 1234px;
     margin: 0 auto;
